@@ -3,13 +3,17 @@
     <head>
         <title>Hello</title>
         <style>
-            
+            .email {width: 400px; height: 300px}
+            .button_sub {display:block}
         </style>
     </head>
     <body>
         <h1>Copy and Paste Email Body Below</h1>
-        <form action="" cols="50">Email Body: <input type="text" name="email_b">
-        <input type="submit">
+        <form action="result"><input type="text" class = "email"name="email_b">
+        <input type="submit" class="button_sub">
         </form>
+
+
+        Email Scanned: {{answer}}
     </body>
 </html>
