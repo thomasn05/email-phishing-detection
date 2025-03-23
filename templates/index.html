@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello</title>
+        <title>Phishing Dectector</title>
         <style>
             .button_sub {display:block}
         </style>
     </head>
     <body>
-        <h1>Copy and Paste Email Body Below</h1>
-        <form action="answer">
+        <h2>Copy and Paste Email Body Below</h2>
+        <form action="answer" method="POST">
+            {% csrf_token %}
             <textarea name="email" rows="50" cols="100" placeholder="Enter your email..."></textarea><br>
             <button type="submit">Submit</button>
         </form>

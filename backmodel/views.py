@@ -7,7 +7,7 @@ def start(request):
     return render(request, 'index.html')
 
 def dataGiven(request):
-    e_body = request.GET['email']
+    e_body = request.POST['email']
     y_pred = md.predict([e_body])
     if y_pred[0] == 'Phishing Email':
         y_pred = "No signs of phishing within the body of the email. Make sure to review the sender & any links provided."
