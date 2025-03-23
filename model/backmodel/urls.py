@@ -2,4 +2,5 @@ from django.urls import path
 from . import views
 
 
-urlpatterns = [path('', views.start, name='start'), path('msg/', views.msg, name='msg')]
+urlpatterns = [path('', views.start, name='start'), path('answer', views.dataGiven, name = 'data'),
+                ]
