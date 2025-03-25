@@ -3,7 +3,10 @@
     <head>
         <title>Phishing Dectector</title>
         <style>
-            .button_sub {display:block}
+            .button_sub {
+                display:block;
+                cursor: pointer;
+        }
         </style>
     </head>
     <body bgcolor="lightgrey">
@@ -12,13 +15,13 @@
             {% csrf_token %}
             <span>
                 <textarea name="email" rows="30" cols="100" placeholder="Enter your email..."></textarea><br>
-                <button type="submit">Submit</button>
+                <button type="submit" class="button_sub">Submit</button>
             </span>
             <span style="margin-left: 40px;">
                 <h2>Instructions</h2>
                 <p style="color: blue;">1. Copy and paste entire email into the text to the left</p>
                 <p style="color: blue;">2. Once all is copied, scroll to the 'submit' button.</p>
-           </span>
+            </span>
         </form>
     </body>
 </html>

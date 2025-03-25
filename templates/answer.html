@@ -2,9 +2,29 @@
 <html>
     <head>
         <title>Result</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            p {
+            font-size: 30px;
+            font-weight: bold;
+            }
+
+            button {
+                font-size: 20px;
+                padding: 5px 10px;
+            }
+        </style>
     </head>
     <body>
-        <p style="font-size: 30px; font-weight: bold;">{{Answer}}</p>
-        <button name="return" onclick="window.location.href='/'">Go Back</button>
+        <div >
+            <p>{{Answer}}</p>
+            <button name="return" onclick="window.location.href='/'">Enter a New Email</button>
+        </div>
     </body>
 </html>
