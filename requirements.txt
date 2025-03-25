@@ -1,0 +1,5 @@
+gunicorn
+Django>=4.2
+scikit-learn
+joblib
+whitenoise==6.6.0
