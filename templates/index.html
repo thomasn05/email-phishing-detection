@@ -6,12 +6,19 @@
             .button_sub {display:block}
         </style>
     </head>
-    <body>
-        <h2>Copy and Paste Email Body Below</h2>
-        <form action="answer" method="POST">
+    <body bgcolor="lightgrey">
+        <h2>Email Phishing Detector</h2>
+        <form action="answer" method="POST" style="display: flex; align-items: flex-start;">
             {% csrf_token %}
-            <textarea name="email" rows="50" cols="100" placeholder="Enter your email..."></textarea><br>
-            <button type="submit">Submit</button>
+            <span>
+                <textarea name="email" rows="30" cols="100" placeholder="Enter your email..."></textarea><br>
+                <button type="submit">Submit</button>
+            </span>
+            <span style="margin-left: 40px;">
+                <h2>Instructions</h2>
+                <p style="color: blue;">1. Copy and paste entire email into the text to the left</p>
+                <p style="color: blue;">2. Once all is copied, scroll to the 'submit' button.</p>
+           </span>
         </form>
     </body>
 </html>
