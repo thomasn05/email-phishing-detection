@@ -9,7 +9,7 @@ def start(request):
 def dataGiven(request):
     e_body = request.POST['email']
     y_pred = md.predict([e_body])
-    if y_pred[0] == 'Phishing Email':
+    if y_pred[0] == 'Safe Email':
         y_pred = "No signs of phishing within the body of the email. Make sure to review the sender & any links provided."
     else:
         y_pred = "Signs of phishing. Proceed with caution. If sender email checks out, continue as normal."
